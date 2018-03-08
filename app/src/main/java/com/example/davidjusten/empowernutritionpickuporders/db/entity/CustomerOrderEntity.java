@@ -11,7 +11,7 @@ import android.arch.persistence.room.PrimaryKey;
 public class CustomerOrderEntity {
 
     @PrimaryKey(autoGenerate = true)
-//    public int _id;
+    public int _id;
     public int mItem_id;
     public int mQuantity;
     public long mOrder_time;

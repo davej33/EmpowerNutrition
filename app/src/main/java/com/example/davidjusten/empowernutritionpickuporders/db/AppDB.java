@@ -8,6 +8,7 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
+import com.example.davidjusten.empowernutritionpickuporders.db.dao.ItemsDao;
 import com.example.davidjusten.empowernutritionpickuporders.db.entity.CustomerOrderEntity;
 import com.example.davidjusten.empowernutritionpickuporders.db.entity.ItemsEntity;
 
@@ -15,11 +16,13 @@ import com.example.davidjusten.empowernutritionpickuporders.db.entity.ItemsEntit
  * Created by davidjusten on 3/7/18.
  */
 @Database(entities = {ItemsEntity.class, CustomerOrderEntity.class}, version = 1)
-public class AppDB extends RoomDatabase {
+public abstract class AppDB extends RoomDatabase {
 
-    private AppDB mDb;
+    private static AppDB mDb;
 
-    public AppDB getDb(Context context){
+    public abstract ItemsDao itemsDao();
+
+    public static AppDB getDb(Context context){
         if(mDb == null){
             mDb = Room.databaseBuilder(context, AppDB.class, "app_db").allowMainThreadQueries().build(); // TODO: fix main thread method
         }

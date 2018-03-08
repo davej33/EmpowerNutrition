@@ -16,17 +16,31 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/strawb_bana" />
+        app:srcCompat="@drawable/blueberry_acai" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:background="#99ffffff"
+        android:paddingLeft="8dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#330281"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/item_image"
+        app:layout_constraintEnd_toStartOf="@+id/item_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Strawberry-Banana" />
 
     <TextView
         android:id="@+id/item_desc"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#edb1b1"
+        android:background="#d09ef4"
         android:gravity="center"
         android:textAppearance="?attr/textAppearanceListItem"
-        android:textSize="12sp"
         android:textColor="#565151"
+        android:textSize="12sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/item_name"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,17 +49,5 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Fresh strawberries and organic bananas, crispy red apple, french vanilla yogurt, avacado and whey protein" />
 
-    <TextView
-        android:id="@+id/item_name"
-        android:layout_width="0dp"
-        android:layout_height="23dp"
-        android:background="#99ffffff"
-        android:paddingLeft="8dp"
-        android:textColor="#8e0000"
-        android:textAppearance="?attr/textAppearanceListItem"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/item_image"
-        app:layout_constraintEnd_toStartOf="@+id/item_desc"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="Strawberry-Banana" />
+
 </android.support.constraint.ConstraintLayout>
