@@ -8,10 +8,13 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
+import com.example.davidjusten.empowernutritionpickuporders.db.entity.CustomerOrderEntity;
+import com.example.davidjusten.empowernutritionpickuporders.db.entity.ItemsEntity;
+
 /**
  * Created by davidjusten on 3/7/18.
  */
-@Database(entities = {}, version = 1)
+@Database(entities = {ItemsEntity.class, CustomerOrderEntity.class}, version = 1)
 public class AppDB extends RoomDatabase {
 
     private AppDB mDb;
