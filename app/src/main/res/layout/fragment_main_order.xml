@@ -6,7 +6,7 @@
     tools:context="com.example.davidjusten.empowernutritionpickuporders.fragments.MainOrderFragment">
 
   <android.support.v7.widget.AppCompatImageView
-      android:id="@+id/image_shakes"
+      android:id="@+id/image_smoothies"
       android:layout_width="162dp"
       android:layout_height="160dp"
       android:src="@drawable/smoothies"
@@ -22,7 +22,7 @@
       android:layout_height="160dp"
       android:src="@drawable/juices"
       app:layout_constraintBottom_toTopOf="@+id/image_juice2"
-      app:layout_constraintEnd_toStartOf="@+id/image_shakes"
+      app:layout_constraintEnd_toStartOf="@+id/image_smoothies"
       app:layout_constraintHorizontal_bias="0.5"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
@@ -134,9 +134,9 @@
       android:textColor="#004a86"
       android:textSize="28sp"
       android:textStyle="bold"
-      app:layout_constraintBottom_toBottomOf="@+id/image_shakes"
-      app:layout_constraintEnd_toEndOf="@+id/image_shakes"
-      app:layout_constraintStart_toStartOf="@+id/image_shakes"
-      app:layout_constraintTop_toTopOf="@+id/image_shakes" />
+      app:layout_constraintBottom_toBottomOf="@+id/image_smoothies"
+      app:layout_constraintEnd_toEndOf="@+id/image_smoothies"
+      app:layout_constraintStart_toStartOf="@+id/image_smoothies"
+      app:layout_constraintTop_toTopOf="@+id/image_smoothies" />
 
 </android.support.constraint.ConstraintLayout>

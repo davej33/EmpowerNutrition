@@ -14,8 +14,8 @@ import java.util.List;
 @Dao
 public interface ItemsDao {
 
-    @Query("SELECT * FROM ItemsEntity WHERE _id IN (:list)")
-    List<ItemsEntity> getItems(List<String> list);
+    @Query("SELECT * FROM ItemsEntity WHERE mType IN (:type)")
+    List<ItemsEntity> getItems(int type);
 
     @Insert
     long[] insertNewItem(List<ItemsEntity> itemsEntity);
